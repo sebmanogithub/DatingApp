@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace API.DTOs
 {
-    public class RegisterDtos
+    public class RegisterDto
     {
         [Required]
         public string Username { get; set; }
