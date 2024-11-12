@@ -1,0 +1,47 @@
+dotnet --info
+Give all of the details of sdk version installed.
+
+dotnet -h
+Give all the commands
+
+dotnet new -h
+
+Solution File --> dotnet new sln
+ASPNET COre Web API --> dotnet new webapi -o API
+
+dotnet new webapi -o API -f net5.0
+
+dotnet sln add API (Ajout du projet à la solution)
+
+VISUAL STUDIO CODE
+Extensions
+1- C#
+2- C# Extensions
+3- C# Dev Kit
+4- Material Icon Theme
+
+Activer File -> AutoSavepour 
+
+Preferences/Settings
+Exclude -> ajouter pattern **/obj et **/bin pour ne pas voir ces répertoire de build.
+
+dotnet watch run
+
+Installation EntityFramework .NET 5
+dotnet add package Microsoft.EntityFrameworkCore --version 5.0.17
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.17
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 5.0.17
+
+dotnet ef migrations add InitialCreate -o Data/Migrations
+dotnet ef migrations add UserPassWordAdded
+
+
+dotnet ef database update
+
+dotnet new gitignore
+
+
+
+
+
+
