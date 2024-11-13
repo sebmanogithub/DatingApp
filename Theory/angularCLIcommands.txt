@@ -23,3 +23,7 @@ Bootstrap
 
 npm list ngx-bootstrap
 ng add ngx-bootstrap@7.1.0
+
+ng g c home --skip-tests
+
+a-ngIf
