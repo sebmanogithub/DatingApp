@@ -1,0 +1,9 @@
+Avantages de cette implémentation
+
+Réactivité : Grâce à ReplaySubject et Observable, les composants sont 
+    automatiquement notifiés des changements d'état de l'utilisateur.
+Centralisation : Toutes les logiques liées à l'authentification sont regroupées 
+    dans un service unique.
+Persistance : L'utilisation de localStorage permet de conserver l'utilisateur 
+    même après un rafraîchissement de la page.
+Extensibilité : Facile à ajouter d'autres méthodes, comme logout() ou register().

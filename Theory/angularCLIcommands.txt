@@ -2,16 +2,25 @@ Extension VScode -> Angular Langage Service
 
 node --version
 
+nvm gère les versions de Node.js.
+npm gère les modules et packages JavaScript utilisés 
+dans les projets Node.js.
+
 Installer ou changer de version Node 16.13 avec nvm :
 
 Ouvre Command Prompt ou PowerShell en tant qu’administrateur, puis exécute :
 nvm version
 nvm install 16.13
 nvm use 16.13
+nvm list
 
 ANGULAR
 ng --version
-npm install -g @angular/cli@12
+npm install -g @angular/cli@12.2.18
+npm uninstall -g @angular/cli
+
+//lister les packages installés globalement avec npm :
+npm list -g --depth=0
 
 ng new client --strict false
 ng serve
@@ -24,6 +33,7 @@ Bootstrap
 npm list ngx-bootstrap
 ng add ngx-bootstrap@7.1.0
 
+//Creer un composant
 ng g c home --skip-tests
 
 a-ngIf
