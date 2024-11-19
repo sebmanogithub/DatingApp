@@ -18,9 +18,14 @@ ANGULAR
 ng --version
 npm install -g @angular/cli@12.2.18
 npm uninstall -g @angular/cli
+npm install ngx-toastr13.0.0
+npm install bootswatch
 
 //lister les packages installés globalement avec npm :
 npm list -g --depth=0
+
+// voir la version installée d'un package
+npm list ngx-toastr
 
 ng new client --strict false
 ng serve
@@ -33,7 +38,15 @@ Bootstrap
 npm list ngx-bootstrap
 ng add ngx-bootstrap@7.1.0
 
+// Ajouter un theme bootstrap
+bootswatch.com
+
 //Creer un composant
 ng g c home --skip-tests
+// Creer un guard
+ng g g guard --skip-tests
+// Creer un module
+ng g m shared --flat
+
 
 a-ngIf
