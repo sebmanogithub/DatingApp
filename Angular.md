@@ -24,7 +24,7 @@ Interface canActivate activé
 Créé un booleen observable afin de savoir si un utilisateur est connecté
 
 ### Protéger les url dans `app-routing.module.ts`
-A l'aide du authGuard crée
+A l'aide du c crée
 ```
 {
     path:'',
@@ -50,6 +50,17 @@ A l'aide du authGuard crée
 
 ### Création de `shared.module.ts`
 Permet de **partager et regrouper les dépendances externes**, autres que les imports spécifiques à Angular, afin de les rendre disponibles au fichier `app.module.ts`
+
+### Création d'un interceptor pour la gestion centralisée des erreurs
+ng g interceptor error --skip-tests
+
+Ajout dans *app.module.ts*   
+```
+providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true}
+  ],
+```  
+
 
 
 
